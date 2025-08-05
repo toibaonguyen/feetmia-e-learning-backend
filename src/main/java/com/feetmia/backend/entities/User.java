@@ -158,4 +158,7 @@ public class User {
     @OneToMany(mappedBy = "owner")
     private Set<OwnerCourse> ownedCourses;
 
+    @OneToMany(mappedBy="user")
+    private Set<CourseRating> ratedCourses;
+
 }
